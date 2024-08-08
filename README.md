@@ -3,10 +3,15 @@
 ## Program Output
 
 Enter song name: Magnolia Gang of Youths
+
 Response JSON: {NOT HERE CAUSE ITS LONG}
+
 Found song: Magnolia by Gang of Youths
+
 Lyrics URL: https://genius.com/Gang-of-youths-magnolia-lyrics
+
 Lyrics: 
+
 [Verse 1]
 Quit honking your horns, there's five other lanes
 And I am king of them all and faster than light
