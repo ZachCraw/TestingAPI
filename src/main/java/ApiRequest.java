@@ -27,7 +27,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class ApiRequest {
-    private static final String ACCESS_TOKEN = "ASK_ME_FOR_TOKEN"; // Shhhhh secret code ASK ME ITS IN CONFLUX
+    private static final String ACCESS_TOKEN = System.getenv("CLIENT_KEY"); // Shhhhh secret code ASK ME ITS IN CONFLUX
     private static final String BASE_URL = "https://api.genius.com"; // Base url for Genius API
 
     public static void main(String[] args) {

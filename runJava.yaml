@@ -1,0 +1,29 @@
+name: Java CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'corretto'
+          java-version: '21.0.4'
+
+      - name: Build with Gradle
+        run: ./gradlew build
+
+      - name: Run Java Application
+        env:
+          clientKey: ${{ secrets.CLIENT_KEY }}
+        run: |
+          echo "Running Java application..."
+          java -jar my-application.jar
